@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpaceRent — Find the perfect space for your event</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📍</text></svg>" />
+</head>
+<body>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="brand" data-nav>
+        <span class="brand-mark">📍</span>
+        <span class="brand-name">Space<span>Rent</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="#/" data-nav>Browse spaces</a>
+        <a href="#/owner" data-nav>Owner dashboard</a>
+      </nav>
+      <div class="header-actions" id="headerActions">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main id="app">
+    <!-- loading splash -->
+    <div class="splash" id="splash">
+      <div class="spinner"></div>
+      <p>Loading SpaceRent…</p>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>SpaceRent — rent the perfect space for functions &amp; events. Built with a zero-dependency Node.js stack.</p>
+      <p class="muted">© <span id="year"></span> SpaceRent. Demo application.</p>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL ROOT ============ -->
+  <div id="modalRoot"></div>
+
+  <!-- ============ TOAST ============ -->
+  <div id="toastRoot"></div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
